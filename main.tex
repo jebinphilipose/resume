@@ -1,0 +1,285 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% \usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{customblue}{HTML}{33A1FF}
+\usepackage[
+  colorlinks=true,
+  urlcolor=customblue,
+  linkcolor=black,
+  pdfauthor={Jebin Philipose},
+  pdftitle={Jebin Philipose - Resume},
+  pdfcreator={},
+  pdfproducer={}
+]{hyperref}
+
+\hypersetup{
+  breaklinks=true,
+  pdfencoding=auto,
+  pdfborder={0 0 0}
+}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\section}{\phantomsection}{}{}{}
+\makeatother
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+\input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Jebin Philipose} \\ \vspace{5pt}
+    \small \texttt{+91-8586942077} \hspace{1pt} $|$
+    \hspace{1pt} \texttt{contact@jebinphilipose.dev} \hspace{1pt} $|$
+    \hspace{1pt} \texttt{\href{https://www.jebinphilipose.dev/}{jebinphilipose.dev}} \hspace{1pt} $|$
+    \hspace{1pt} \texttt{\href{https://www.linkedin.com/in/jebin-philipose/}{linkedin.com/in/jebin-philipose}} \\ \vspace{5pt}
+    \small \texttt{Chennai, India}
+    \\ \vspace{-5pt}
+\end{center}
+
+\begin{center}
+{\fontsize{12}{17}\selectfont
+\textcolor{dark-grey}{
+Senior Backend Engineer with 4+ years of experience building scalable B2B SaaS platforms
+}}
+\end{center}
+\vspace{-10pt} % Adjust spacing to fit
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Backend Engineer (SE-3)}{Chennai, India}
+      {\href{https://detecttechnologies.com/}{Detect Technologies}}{09/2024 - Present}
+      \resumeItemListStart
+        \resumeItem{\textbf{T-Pulse v23 Release Lead:} Led a cross-functional 4-engineer team to deliver the \textbf{T-Pulse v23 release}, resolving \textbf{200+ functional, security (VAPT), and performance issues.} Achieved \textbf{100\% green VAPT audit status}, unblocking pending invoices for high-value clients including \textbf{BPCL}, directly accelerating company revenue.}
+        \resumeItem{\textbf{NRL Scope Management Lead:} Architected a \textbf{cloud-agnostic system} and its \textbf{PostgreSQL schema} while leading a cross-functional 5-engineer team through \textbf{Agile sprints and code reviews}, increasing \textbf{delivery velocity by 35\%.} Engineered an asynchronous data pipeline using \textbf{Python/Django, Redis, and Dramatiq} to process large CSV files, \textbf{reducing memory usage by 70\%, eliminating 504 timeouts, and accelerating user time-to-insight by 10x.}}
+        \resumeItem{\textbf{Performance Optimization (MRPL):} Improved response times by \textbf{99\%} and reduced SQL queries from \textbf{4,081 to 9} after diagnosing bottlenecks using \textbf{CloudWatch and Django-Silk.} Leveraged \textbf{prefetch\_related, DB indexing, RDS Read Replicas, and AWS RDS Proxy} to eliminate service crashes and enable horizontal scalability.}
+        \resumeItem{\textbf{CI/CD Lead:} Improved \textbf{system stability by 90\%} by re-architecting \textbf{T-Pulse CI/CD pipelines (IaC)} and delivering critical bug fixes and enhancements. Leveraged \textbf{Python, Terraform, AWS, and GitLab CI/CD} to streamline delivery for global enterprise clients, including \textbf{Shell, ExxonMobil, Adani, Reliance}, and other Fortune 500 companies.}
+        \resumeItem{\textbf{Engineering Leadership:} Served as \textbf{Reporting Manager (RM)} for a 3-engineer team. Drove team performance through \textbf{1:1s and mentorship}, resulting in the promotion of a direct report from \textbf{SE-1 to SE-2.} Managed the full talent lifecycle, including technical hiring, onboarding, and offboarding processes to support team scaling.}
+        \resumeItem{\textbf{Tech Stack:} Python, Django, Redis, Celery, PostgreSQL, Docker, Kubernetes, Terraform, GitLab CI/CD, AWS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Engineer}{Remote}
+      {\href{https://www.certa.ai/}{Certa}}{05/2022 - 09/2022}
+      \resumeItemListStart
+        \resumeItem{\textbf{Backend Engineering:} Designed multi-tenant REST APIs in \textbf{Python/Django} for a Workflow Engine platform serving enterprise clients such as \textbf{Walmart and Uber}. Maintained \textbf{<200 ms latency} while leveraging \textbf{Celery} to orchestrate workflows that process \textbf{1M+ PostgreSQL writes per workflow execution.}}
+        \resumeItem{\textbf{API Optimization:} Eliminated \textbf{N+1 queries and sequential scans} in User/Workflow APIs using \textbf{Django-Silk}. Reduced SQL queries and achieved a \textbf{99\% improvement in response times} by implementing \textbf{prefetch\_related and DB indexing.}}
+        \resumeItem{\textbf{System Reliability:} Leveraged \textbf{Datadog, Sentry, and AWS CloudWatch} to monitor traffic spikes and resource utilization. Implemented fixes for \textbf{race conditions and unoptimized code} to reduce production timeouts and exceptions by \textbf{35\%.}}
+        \resumeItem{\textbf{Tech Stack:} Python, Django, pytest, Redis, Celery, PostgreSQL, AWS}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Remote}
+      {\href{https://www.getswym.com/}{Swym}}{12/2020 - 05/2022}
+      \resumeItemListStart
+        \resumeItem{\textbf{Product Engineering (0 $\rightarrow$ 1):} Architected and built a \textbf{Revenue Analytics Platform} from scratch using \textbf{Clojure and PostgreSQL}. Enabled real-time subscription tracking for merchants and partnered with \textbf{C-suite stakeholders} to align technical roadmaps with business growth goals.}
+        \resumeItem{\textbf{Data Engineering:} Developed an \textbf{automated Clojure-based ETL pipeline} to ingest transactional data for \textbf{100K+ Shopify merchants}, processing \textbf{300K+ historical app events.} Engineered \textbf{Metabase dashboards} to automate reporting workflows, saving \textbf{60+ engineering hours per month.}}
+        \resumeItem{\textbf{Product Engineering:} Redesigned the annual billing workflow by integrating \textbf{Shopify GraphQL Billing APIs}, automating \textbf{95\% of subscription renewals}, eliminating manual processing, and reducing churn.}
+        \resumeItem{\textbf{Tech Stack:} Clojure (Functional Programming), Redis, Citus (Distributed PostgreSQL), AWS}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Bangalore, India}
+      {\href{https://pubninja.com/}{PubNinja}}{02/2020 - 06/2020}
+      \resumeItemListStart
+        \resumeItem{\textbf{Frontend Performance:} Achieved a \textbf{95\% reduction in page rendering time (300 ms $\rightarrow$ 5 ms)} by optimizing server-side template rendering, \textbf{eliminating Cloudflare timeout errors} across the PubNinja creator ecosystem.}
+        \resumeItem{\textbf{Backend Engineering:} Developed a unified \textbf{Node.js comments service} using a \textbf{polymorphic design} to support 3+ content types, \textbf{reducing code redundancy by 60\%}. Engineered a real-time \textbf{Notifications backend via Twilio}, improving platform-wide engagement and retention.}
+        \resumeItem{\textbf{Tech Stack:} Node.js, Express.js, Redis, MySQL, AWS}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{Bangalore, India}
+      {\href{https://www.fylehq.com/}{Fyle}}{04/2019 - 10/2019}
+      \resumeItemListStart
+        \resumeItem{\textbf{Microservices:} Optimized the \textbf{PDF Exports Microservice} used by thousands of enterprise clients. Developed a \textbf{deduplication mechanism} that eliminated \textbf{8,000+ redundant API calls daily}. Optimized Docker images, \textbf{achieving 50\% faster builds}, and resolved critical \textbf{P0 production bugs} to ensure service stability.}
+        \resumeItem{\textbf{Database Performance:} Optimized production \textbf{PostgreSQL} queries by \textbf{70\% (10 s $\rightarrow$ <3 s)} through \textbf{query execution plan analysis} and index tuning, enhancing platform throughput and reducing database CPU load.}
+        \resumeItem{\textbf{Engineering Culture:} Co-authored a technical blog post with the \textbf{CTO} on \href{https://stories.fylehq.com/p/jdbi-and-timezones}{JDBI and Timezones}, which became the platform's \textbf{second most popular article}, driving external developer engagement.}
+        \resumeItem{\textbf{Tech Stack:} Python, Flask, Java, Dropwizard, PostgreSQL, RabbitMQ, Docker, Kubernetes, AWS}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/jebinphilipose/cowin-slack-bot}{CoWIN Slack Bot}} {}
+          \resumeItemListStart
+            \resumeItem{\textbf{Automated Vaccine Notifier:} Engineered a \textbf{serverless Slack bot} using \textbf{Python and AWS Lambda} to monitor CoWIN REST APIs for real-time vaccine availability. Enabled \textbf{30+ successful vaccine bookings} via an automated polling mechanism.}
+            \resumeItem{\textbf{Tech Stack:} Python, Redis, Slack API, AWS Lambda}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Proficient:} {Python, Django, Flask, PostgreSQL, AWS, Docker, Redis, Celery, Git}\vspace{2pt} \\
+     \textbf{Familiar:} {C++, Java, JavaScript, Node.js, Express.js, Clojure, HTML, CSS, React.js, Next.js, MySQL, MongoDB, Kubernetes, GCP}\vspace{2pt} \\
+     \textbf{Others:} {REST API Design, Microservices Architecture, System Design, Performance Optimization, CI/CD}
+    }}
+ \end{itemize}
+
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.chitkara.edu.in/}{Chitkara University}}{08/2016 - 07/2020}
+      {Bachelor of Engineering in Computer Science and Engineering $|$ \textbf{CGPA: 8.76/10}}{Punjab, India}
+    \resumeItemListStart
+        \resumeItem{Selected for the \textbf{University Coding Academy} (\textbf{Top 10\% of applicants}). Completed intensive tracks in \textbf{Data Structures}, \textbf{Algorithms}, and \textbf{CS Fundamentals.}}
+        \resumeItem{\textbf{Google Developer Student Clubs (GDSC):} Served as a Core Team Member. Organized technical workshops on \textbf{Web Technologies} and \textbf{Cloud Architecture} for \textbf{200+ students}, facilitating hands-on learning sessions.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS}
+  \resumeItemListStart
+    \resumeItem{\textbf{ICPC Asia Kolkata-Kanpur Regionals 2018:} Qualified for the \href{https://icpc.global/ICPCID/NKANW920C4X3/}{Onsite Regionals (2018)}, competing against top programming teams in one of the world's most prestigious algorithmic contests.}
+    \resumeItem{\textbf{Udacity Certification:} Earned the \href{https://www.udacity.com/certificate/9TACEKES}{Full Stack Web Developer Nanodegree} by developing industry-vetted applications featuring \textbf{responsive UIs}, \textbf{REST APIs}, \textbf{SQL modeling}, \textbf{OAuth 2.0}, and \textbf{Linux server configuration} for secure deployment.}
+    \resumeItem{\textbf{CodeChef DSA Certification:} Earned the \href{https://www.codechef.com/certificates/public/bc2d46c/}{Foundation Level Certification} in \textbf{Data Structures and Algorithms}, demonstrating strong proficiency in complex problem-solving and algorithmic efficiency.}
+  \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
