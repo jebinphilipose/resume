@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1773803805.80667 "/Users/jebin/Desktop/CV/resume/main.tex" "main.pdf" "main" 1773803806.43962 0
-  "/Users/jebin/Desktop/CV/resume/main.tex" 1773803805.57116 14803 d5d5b001aa16a0af8ffa78cadadf0cec ""
+["pdflatex"] 1773831288.64023 "/Users/jebin/Desktop/CV/resume/main.tex" "main.pdf" "main" 1773831289.32143 0
+  "/Users/jebin/Desktop/CV/resume/main.tex" 1773831288.44769 14819 34ac3412ebcb7c797e37cfb36bf9e309 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_i3ioen.enc" 1570828436 2862 216913a462814c3772679fedc1bbde0e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -119,9 +119,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1772225361 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1772225292 3345733 76aaf3d37e9e9bfe8633691bd9578cbb ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "main.aux" 1773803806.37675 810 02122fd346db59c8633748e15777d5cd "pdflatex"
-  "main.out" 1773803806.37766 220 5719bb4c098818372f9f028789cef9ae "pdflatex"
-  "main.tex" 1773803805.57116 14803 d5d5b001aa16a0af8ffa78cadadf0cec ""
+  "main.aux" 1773831289.25493 810 02122fd346db59c8633748e15777d5cd "pdflatex"
+  "main.out" 1773831289.25555 220 5719bb4c098818372f9f028789cef9ae "pdflatex"
+  "main.tex" 1773831288.44769 14819 34ac3412ebcb7c797e37cfb36bf9e309 ""
   (generated)
   "main.aux"
   "main.log"
